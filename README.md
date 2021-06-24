@@ -1,7 +1,5 @@
 # Welcome to CleanCodeWorkshop :checkered_flag:
 
-<img width="30%" height="40%" src="https://i.makeagif.com/media/7-20-2017/tglPfl.gif" />
-
 <span style="width:100%">[![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com)
@@ -14,7 +12,9 @@
 [![forthebadge](https://forthebadge.com/images/badges/uses-badges.svg)](https://forthebadge.com)
 </span>
 
-<img align='right' width="50%" height="50%" src="https://i.imgur.com/rfELtKE.gif"/>
+<img align=right width="30%" height="40%" src="https://i.makeagif.com/media/7-20-2017/tglPfl.gif" />
+<!-- <img width="30%" height="50%" src="https://i.imgur.com/rfELtKE.gif"/> -->
+
 
 ## About the Workshop 
 
@@ -27,7 +27,7 @@
 * practical via gitlab code in small groups
 * coming back to discuss learnings.
 
-<img align='bottom' width="1000%" height="100%" src="https://www.cleancodefactory.de/Content/Images/Factory_slow.gif" />
+<img align='bottom' width="100%" height="100%" src="https://www.cleancodefactory.de/Content/Images/Factory_slow.gif" />
 
 
 ## Rules :boom:
