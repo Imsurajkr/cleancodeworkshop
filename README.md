@@ -12,9 +12,8 @@
 [![forthebadge](https://forthebadge.com/images/badges/uses-badges.svg)](https://forthebadge.com)
 </span>
 
-<img align=right width="30%" height="40%" src="https://i.makeagif.com/media/7-20-2017/tglPfl.gif" />
-<!-- <img width="30%" height="50%" src="https://i.imgur.com/rfELtKE.gif"/> -->
 
+<img align=right width="30%" height="40%" src="https://i.makeagif.com/media/7-20-2017/tglPfl.gif" />
 
 ## About the Workshop 
 
@@ -37,6 +36,8 @@
 ### 4) There are branches based on group name. Refactor the code. 
 ### 5) Create a PR [ Pull Request ] for that particular branch only.
 ### 6) There are multiple levels in which questions are designed.
+
+<img align=right width="50%" height="50%" src="https://i.imgur.com/rfELtKE.gif"/>
 
 <!-- <img align='bottom' width="30%" height="40%" src="https://i.pinimg.com/originals/f4/ed/d7/f4edd74d05ab9268f021a6a0ada5cd2e.gif" /> -->
 <!-- <img align='bottom' width="30%" height="40%" src="https://milanlatinovic.com/wp-content/uploads/2019/03/clean-code-rules.gif" /> -->
