@@ -1,4 +1,4 @@
-# Welcome to CleanCodeWorkshop :octocat:
+# Welcome to CleanCodeWorkshop :checkered_flag:
 
 <span style="width:100%">[![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
@@ -12,7 +12,9 @@
 [![forthebadge](https://forthebadge.com/images/badges/uses-badges.svg)](https://forthebadge.com)
 </span>
 
-<img align='right' src="https://media.giphy.com/media/kG6B7EcihfJN12CVSj/giphy.gif">
+<img align='right' src="https://media.giphy.com/media/kG6B7EcihfJN12CVSj/giphy.gif"/>
+
+
 
 ## About the Workshop 
 
@@ -24,6 +26,8 @@
 * break
 * practical via gitlab code in small groups
 * coming back to discuss learnings.
+
+<img align='bottom' src="https://i.stack.imgur.com/SBv4T.gif" alt="this slowpoke moves"  width="250"/>
 
 ## Rules :boom:
 
