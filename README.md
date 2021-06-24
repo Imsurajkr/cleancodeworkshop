@@ -31,7 +31,7 @@
 
 ## Rules :boom:
 
-<img align=right width="35%" height="50%" src="https://i.imgur.com/rfELtKE.gif"/>
+<img align=right width="35%" height="200px" src="https://i.imgur.com/rfELtKE.gif"/>
 
 ### 1) Fork this repo incase facing issue follow this documentation.
 ### 2) Every member is assigned to a group.
