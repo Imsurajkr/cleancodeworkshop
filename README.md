@@ -63,6 +63,11 @@ gh auth login
 ![GH Install Gif](gifs/installGH.gif)
 
 ```bash
+# Clone the repo 
+git clone https://github.com/Imsurajkr/cleancodeworkshop.git
+cd cleancodeworkshop.git
+gh repo fork 
+
 
 gitlabUserName
 parentBranch=GroupName # Replace Group Name with your group 
@@ -78,3 +83,4 @@ git push
 
 # All the best :-)
 ```
+![GH Install Gif](gifs/forkGH.gif)
