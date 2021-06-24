@@ -43,3 +43,22 @@
 <!-- <img align='bottom' width="30%" height="40%" src="https://i.pinimg.com/originals/f4/ed/d7/f4edd74d05ab9268f021a6a0ada5cd2e.gif" /> -->
 <!-- <img align='bottom' width="30%" height="40%" src="https://milanlatinovic.com/wp-content/uploads/2019/03/clean-code-rules.gif" /> -->
 <!-- <img align='bottom' width="30%" height="40%" src="https://i.giphy.com/media/ef7GqsDYDIKFa/giphy.gif" /> -->
+
+## Git 
+
+```bash
+
+gitlabUserName
+parentBranch=GroupName # Replace Group Name with your group 
+candidateName=MemberName # Replace MemberName with your Name
+branchName="$parentBranch-$candidateName"
+git clone https://gitlab.com/$gitlabUsername/cleancodeworkshop.git
+git checkout -b $branchName
+# Add Your magic When done 
+git pull 
+git add <FilesChanged> 
+git commit -m "Customized Message"
+git push
+
+# All the best :-)
+```
