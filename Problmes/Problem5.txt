@@ -1,0 +1,85 @@
+#include <iostream>
+
+using namespace std;
+int GCD(int a, int b);
+
+int main()
+{
+    cout<<"<===========Welcome to Beginner's Examples============>\n";
+    cout<<"1.Number's Triangle.\n";
+    cout<<"2.Greatest of 3 numbers.\n";
+    cout<<"3.Given Number is Palindrome or not.\n";
+    cout<<"4.GCD of 2 numbers.\n";
+    cout<<"Please provide input to see illustration\n";
+    int a;
+    cin>>a;
+    if(a==1)
+    {
+        cout<<"Enter height for triangle ";
+        int b;
+        cin>>b;
+        for(int i=0; i<b; i++)
+        {
+            for(int j=0; j<=i; j++)
+            {
+                cout<<j;
+            }
+            cout<<"\n";
+        }
+    }
+    else if(a==2)
+    {
+        cout<<"Enter any 3 numbers ";
+        int a,b,c,max;
+        cin>>a;
+        cin>>b;
+        cin>>c;
+        max = a>b?a>c?a:c:b>c?b:c;
+        cout<<"Maximum of 3 numbers is "<<max<<endl;
+    }
+    else if(a==3)
+    {
+        cout<<"Enter any number ";
+        int a,b=0,temp;
+        cin>>a;
+        temp = a;
+        while(temp!=0)
+        {
+            b *= 10;
+            b += temp%10;
+            temp = temp/10;
+        }
+        if(a==b)
+        {
+            cout<<a<<" is a palindrome"<<endl;
+        }
+    }
+    else if(a==4)
+    {
+        cout<<"Enter any 2 numbers ";
+        int a,b,gcd;
+        cin>>a;
+        cin>>b;
+        gcd = GCD(a,b);
+        cout<<"GCD of "<<a<<" and "<<b<<" is "<<gcd<<endl;
+    }
+    else
+    {
+        cout<<"Please provide valid Input"<<endl;
+    }
+    main();
+
+    return 0;
+}
+
+int GCD(int a, int b)
+{
+    if(b!=0)
+    {
+        return GCD(b,a%b); //Recursion
+    }
+    else
+    {
+        return a;
+    }
+}

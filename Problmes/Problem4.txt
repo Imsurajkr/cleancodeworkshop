@@ -1,0 +1,31 @@
+function auth(string username, string password)
+{
+    if(username == ""){
+        if(password == "")
+            return "Please enter valid credentials"
+    }
+
+    var isAccountValid = validateAccount(username, password)
+    if(isAccountValid) {
+        return true;
+    }
+    else
+    return false;
+}
+
+function validateAccount(string u, string p)
+{
+    var acc = getByUserName(u);
+    var isPasswordCorrect = u.Password == p;
+    if(isPasswordCorrect)
+    return true;
+    else
+    return false;
+}
+
+function getByUserName(string u)
+{
+    var account = database.ExecuteQuery("Select * from users where username='{u}'");
+    // TODO : handle account not found condition
+    return account;
+}

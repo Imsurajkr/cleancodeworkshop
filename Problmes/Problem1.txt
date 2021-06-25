@@ -1,0 +1,12 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace CleanCodeExample
+{
+    public class Person
+    {
+        public string FirstName;
+        public string LastName;
+    }
+}
