@@ -65,22 +65,18 @@ gh auth login
 ```bash
 # Clone the repo 
 git clone https://github.com/Imsurajkr/cleancodeworkshop.git
-cd cleancodeworkshop.git
+cd cleancodeworkshop
 gh repo fork 
-
-
-gitlabUserName
 parentBranch=GroupName # Replace Group Name with your group 
 candidateName=MemberName # Replace MemberName with your Name
 branchName="$parentBranch-$candidateName"
-git clone https://gitlab.com/$gitlabUsername/cleancodeworkshop.git
 git checkout -b $branchName
 # Add Your magic When done 
 git pull 
 git add <FilesChanged> 
 git commit -m "Customized Message"
-git push
-
+git push 
+gh pr create --title "I did some changes" --body "And it works"
 # All the best :-)
 ```
 ![GH Install Gif](gifs/forkGH.gif)
