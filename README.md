@@ -44,7 +44,7 @@
 <!-- <img align='bottom' width="30%" height="40%" src="https://milanlatinovic.com/wp-content/uploads/2019/03/clean-code-rules.gif" /> -->
 <!-- <img align='bottom' width="30%" height="40%" src="https://i.giphy.com/media/ef7GqsDYDIKFa/giphy.gif" /> -->
 
-## Git 
+## Github CLI 
 
 Installing gh cli [link](https://github.com/cli/cli/blob/trunk/docs/install_linux.md)
 
