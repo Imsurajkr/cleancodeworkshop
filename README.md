@@ -61,6 +61,7 @@ sudo apt install gh
 gh auth login
 ```
 ![GH Install Gif](gifs/installGH.gif)
+![GH done](gifs/gh_setup_done.png)
 
 ```bash
 # Clone the repo 
@@ -80,3 +81,4 @@ gh pr create --title "I did some changes" --body "And it works"
 # All the best :-)
 ```
 ![GH Install Gif](gifs/forkGH.gif)
+![PR Raised](gifs/pr_created.png)
