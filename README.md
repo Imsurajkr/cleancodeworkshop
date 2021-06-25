@@ -42,8 +42,19 @@ We will get our hands dirty by diving into some "dirty" code snippets and "clean
 #### 5) You have successfully participated.
 #### 6) Sit back and relax.
 
+## Methods of Participation
 
-## Pariticipation via `GitHub CLI`
+* Using `Web UI`
+* Using `GitHub CLI`
+*   For Mac Users
+*   For Windows
+*   For Linux
+
+## Pariticipation via `Web UI`
+
+*
+
+## Pariticipation via `GitHub CLI`: For Linux
 
 For all the nerds who want to learn and explore more of `GitHub CLI` please follow along. If you have already installed `gh cli` you can skip to the second section.
 
