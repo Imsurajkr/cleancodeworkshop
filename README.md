@@ -44,15 +44,26 @@ We will get our hands dirty by diving into some "dirty" code snippets and "clean
 
 ## Methods of Participation
 
-* Using `Web UI`
+* Using `Web UI` [link](https://github.com/cli/cli/blob/trunk/docs/install_linux.md)
 * Using `GitHub CLI`
-*   For Mac Users
-*   For Windows
-*   For Linux
+  *   For Mac Users [clickhere](#participation-via-github-cli-for-macos)
+  *   For Windows 
+  *   For Linux 
 
 ## Pariticipation via `Web UI`
 
-*
+* Click [here]() for brief demonstration on `fork` and generating `PR`
+
+## Pariticipation via `Github CLI`: For Windows
+
+* Click [here](https://github.com/cli/cli/releases/download/v1.11.0/gh_1.11.0_windows_amd64.msi) to download the `gh cli` tool.
+* After installing open powershell.
+* `gh auth login` 
+
+## Participation via `Github CLI`: For MacOS
+
+* `brew install gh`
+* `gh auth login`
 
 ## Pariticipation via `GitHub CLI`: For Linux
 
@@ -72,8 +83,9 @@ sudo apt install gh
 
 gh auth login
 ```
+
 ![GH Install Gif](gifs/installGH.gif)
-![GH done](gifs/gh_setup_done.png)
+ *`Installation of gh command line in linux`*
 
 After successful installation of `gh cli`, it is now time to start the task at hand. 
 
@@ -105,4 +117,5 @@ gh pr create --title "I did some changes" --body "And it works"
 # All the best :-)
 ```
 ![GH Install Gif](gifs/forkGH.gif)
+*Sample video for fork, branch, add, commit, push, and generating PR *
 ![PR Raised](gifs/pr_created.png)
