@@ -44,17 +44,19 @@ We will get our hands dirty by diving into some "dirty" code snippets and "clean
 
 ## Methods of Participation
 
-* Using `Web UI` [link](https://github.com/cli/cli/blob/trunk/docs/install_linux.md)
+* Using `Web UI` [💻ui](#participation-via-web-ui)
+
 * Using `GitHub CLI`
-  *   For Mac Users [clickhere](#participation-via-github-cli-for-macos)
-  *   For Windows 
-  *   For Linux 
+  *   For Mac Users [Mac](#participation-via-github-cli-for-macos)
+  *   For Windows [🪟Win](#participation-via-github-cli-for-windows)
+  *   For Linux [🐧Linux](#participation-via-github-cli-for-linux)
 
-## Pariticipation via `Web UI`
+## Participation via `Web UI`
 
-* Click [here]() for brief demonstration on `fork` and generating `PR`
+* How to `Fork` a repo. Click [here](https://docs.github.com/en/get-started/quickstart/fork-a-repo) 
+* How to Create a `pull request`.Click [here](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
 
-## Pariticipation via `Github CLI`: For Windows
+## Participation via `Github CLI`: For Windows
 
 * Click [here](https://github.com/cli/cli/releases/download/v1.11.0/gh_1.11.0_windows_amd64.msi) to download the `gh cli` tool.
 * After installing open powershell.
@@ -65,7 +67,7 @@ We will get our hands dirty by diving into some "dirty" code snippets and "clean
 * `brew install gh`
 * `gh auth login`
 
-## Pariticipation via `GitHub CLI`: For Linux
+## Participation via `GitHub CLI`: For Linux
 
 For all the nerds who want to learn and explore more of `GitHub CLI` please follow along. If you have already installed `gh cli` you can skip to the second section.
 
@@ -117,5 +119,9 @@ gh pr create --title "I did some changes" --body "And it works"
 # All the best :-)
 ```
 ![GH Install Gif](gifs/forkGH.gif)
-*Sample video for fork, branch, add, commit, push, and generating PR *
+
+*Sample video demonstration on how to  `fork`, `branch`, add, commit, push, and `generating PR`*
+
 ![PR Raised](gifs/pr_created.png)
+
+*Screenshot of PR creation*
