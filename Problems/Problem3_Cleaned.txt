@@ -1,0 +1,64 @@
+/**
+ *  P1: Convert to a number to absolute number
+ */
+
+function ConvertToAbsoluteNumber(n){
+  if(n<0){
+    return "(" + Math.abs(n) + ")";
+  } else {
+	return n;
+  } 
+}
+
+console.log(ConvertToAbsoluteNumber(-1));
+console.log(ConvertToAbsoluteNumber(0));
+console.log(ConvertToAbsoluteNumber(1));
+console.log(ConvertToAbsoluteNumber(10));
+
+
+/**
+ *  P2: Calculate the total amount
+ */
+
+function calculateBillingAmount(selectedItems, options) {
+  let totalAmount = 0;
+  let baseTotal = itemsCost(selecteditems) 
+  let discount = calculateDiscount(baseTotal,options.discount)
+  let discountedTotal = baseTotal - discount;
+  let afterTaxTotal = discountTotal + taxAmount(baseTotal, 0.1)
+  let totalAmount = afterTaxTotal + shipmenAmount(options.ShipmentCharges);
+  return totalAmount;
+}
+itemsCost(selecteditems){
+	
+	selectedItems.forEach((item) => {
+    baseTotal += item.price * item.quantity;
+  });
+  return baseTotal;
+}
+calculateDiscount(baseTotal,options.discount){
+	if(options.discount == Null)
+	return 0;
+	else
+	return baseTotal * options.discount;
+}
+taxAmount(baseTotal,taxPercent){
+	return baseTotal*taxPercent;
+}
+shipmentAmount(shipCharges){
+	if(shipCharges == null)
+	return 5;
+	else
+	return shipCharges;
+}
+
+const selectedItems = [
+  { price: 15, quantity: 2 },
+  { price: 20, quantity: 1 },
+  { price: 5, quantity: 4 },
+];
+
+console.log(calculateBillingAmount(selectedItems, {}));
+console.log(calculateBillingAmount(selectedItems, { shipmentCharges: 0 }));
+console.log(calculateBillingAmount(selectedItems, { discount: 0.75 }));
+console.log(calculateBillingAmount(selectedItems, { shipmentCharges: 12 }));

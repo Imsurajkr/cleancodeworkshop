@@ -114,7 +114,7 @@ git commit -m "Customized Message"
 git push 
 
 # Raise PR
-gh pr create --title "I did some changes" --body "And it works"
+gh pr create --title "I did some changes" --body "And it works" --base <branchName> # The branch into which you want your code merged
 
 # All the best :-)
 ```
