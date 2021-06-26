@@ -11,75 +11,97 @@ int main()
     cout<<"3.Given Number is Palindrome or not.\n";
     cout<<"4.GCD of 2 numbers.\n";
     cout<<"Please provide input to see illustration\n";
-    int a;
-    cin>>a;
-    if(a==1)
-    {
-        cout<<"Enter height for triangle ";
-        int b;
-        cin>>b;
-        for(int i=0; i<b; i++)
-        {
-            for(int j=0; j<=i; j++)
-            {
-                cout<<j;
-            }
-            cout<<"\n";
-        }
+    int choice;
+    cin>>choice;
+
+    switch(choice){
+        case 1: 
+            printNumbersTriangle();
+            break;
+        case 2: 
+            findGreatestOfThreeNumbers()
+            break;
+        case 3: 
+            isPalindromeNumber()
+            break;
+        case 4: 
+            printGCD()
+            break;
+        default:
+            cout<<"Please provide valid Input"<<endl;
     }
-    else if(a==2)
-    {
-        cout<<"Enter any 3 numbers ";
-        int a,b,c,max;
-        cin>>a;
-        cin>>b;
-        cin>>c;
-        max = a>b?a>c?a:c:b>c?b:c;
-        cout<<"Maximum of 3 numbers is "<<max<<endl;
-    }
-    else if(a==3)
-    {
-        cout<<"Enter any number ";
-        int a,b=0,temp;
-        cin>>a;
-        temp = a;
-        while(temp!=0)
-        {
-            b *= 10;
-            b += temp%10;
-            temp = temp/10;
-        }
-        if(a==b)
-        {
-            cout<<a<<" is a palindrome"<<endl;
-        }
-    }
-    else if(a==4)
-    {
-        cout<<"Enter any 2 numbers ";
-        int a,b,gcd;
-        cin>>a;
-        cin>>b;
-        gcd = GCD(a,b);
-        cout<<"GCD of "<<a<<" and "<<b<<" is "<<gcd<<endl;
-    }
-    else
-    {
-        cout<<"Please provide valid Input"<<endl;
-    }
+    
     main();
 
     return 0;
 }
 
-int GCD(int a, int b)
-{
-    if(b!=0)
+void printNumbersTriangle(){
+    int height;
+    cout<<"Enter height for triangle ";
+    cin>>height;
+    for(int column=0; column<height; column++)
     {
-        return GCD(b,a%b); //Recursion
+        for(int row=0; row<=column; row++)
+        {
+            cout<<row;
+        }
+        cout<<"\n";
+    }
+}
+
+void findGreatestOfThreeNumbers(){
+    int number1,number2,number3,maxNumber;
+    
+    cout<<"Enter any 3 numbers ";
+    
+    cin>>number1;
+    cin>>number2;
+    cin>>number3;
+
+    if(number1>number2){
+        maxNumber  = number1 > number3 ? number1 : number3;
+    }else{
+        maxNumber = number2>number3 ? number2 : number3;
+    }
+
+    cout<< "Maximum of 3 numbers is "<< maxNumber << endl;
+}
+
+void isPalindromeNumber(){
+    cout<<"Enter any number ";
+    int number, reverseNumber=0, tempNumber;
+    cin>>number;
+    tempNumber = number;
+    while(tempNumber!=0)
+    {
+        reverseNumber *= 10;
+        reverseNumber += tempNumber%10;
+        tempNumber = tempNumber/10;
+    }
+    if(number==reverseNumber)
+    {
+        cout<<number<<" is a palindrome"<<endl;
+    }
+}
+
+printGCD(){
+    cout<<"Enter any 2 numbers ";
+    int number1,number2,gcd;
+    cin>>number1;
+    cin>>number2;
+    gcd = GCD(number1,number2);
+    cout<<"GCD of "<<number1<<" and "<<number2<<" is "<<gcd<<endl;
+}
+
+int GCD(int number1, int number2)
+{
+    if(number2!=0)
+    {
+        return GCD(number2 , number1 % number2); //Recursion
     }
     else
     {
-        return a;
+        return number1;
     }
 }
