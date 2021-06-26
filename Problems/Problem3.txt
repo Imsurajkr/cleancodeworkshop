@@ -42,3 +42,56 @@ console.log(calculateTotal(testItems, {}));
 console.log(calculateTotal(testItems, { ship: 0 }));
 console.log(calculateTotal(testItems, { dis: 0.75 }));
 console.log(calculateTotal(testItems, { ship: 12 }));
+
+
+
+===CLEAN CODES===
+
+
+/**
+ *  P1: Convert to a number to absolute string
+ */
+
+function findAbsoluteNumber(num){
+  return num < 0 ? "(" + Math.abs(num) + ")" : num ;
+}
+
+console.log(findAbsoluteNumber(-1));
+console.log(findAbsoluteNumber(0));
+console.log(findAbsoluteNumber(1));
+console.log(findAbsoluteNumber(10));
+
+
+
+/**
+ *  P2: Calculate the total amount
+ */
+
+
+function calculateTotalQuantityPrice (total,item){
+  return total +( item.price * item.quantity)
+  }
+
+function calculateDiscount(totalPrice,options){
+    totalPrice = totalPrice - totalPrice * (options.discount || 0);
+    totalPrice = totalPrice * 1.1;
+    totalPrice = totalPrice + (options.shipment || 5);
+    return totalPrice;
+}
+
+function calculateTotal(items, options) {
+  let totalItemQuantityPrice = items.reduce(calculateTotalQuantityPrice,0)
+  return calculateDiscount(totalItemQuantityPrice,options)
+}
+
+const testItems = [
+  { price: 15, quantity: 12 },
+  { price: 20, quantity: 1 },
+  { price: 5, quantity: 4 },
+];
+
+// console.log(calculateTotal());
+console.log(calculateTotal(testItems, {}));
+console.log(calculateTotal(testItems, { shipment: 0 }));
+console.log(calculateTotal(testItems, { discount: 0.75 }));
+console.log(calculateTotal(testItems, { shipment: 12 }));

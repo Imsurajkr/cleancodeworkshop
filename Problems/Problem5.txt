@@ -1,7 +1,10 @@
 #include <iostream>
 
 using namespace std;
-int GCD(int a, int b);
+int GCD(int number1, int number2);
+int findNumberOfTriangle(int height);
+int findMaximumNumber(int number1,int number2,int number3);
+int  isPalindrome(int number);
 
 int main()
 {
@@ -11,64 +14,42 @@ int main()
     cout<<"3.Given Number is Palindrome or not.\n";
     cout<<"4.GCD of 2 numbers.\n";
     cout<<"Please provide input to see illustration\n";
-    int a;
-    cin>>a;
-    if(a==1)
-    {
-        cout<<"Enter height for triangle ";
-        int b;
-        cin>>b;
-        for(int i=0; i<b; i++)
-        {
-            for(int j=0; j<=i; j++)
-            {
-                cout<<j;
-            }
-            cout<<"\n";
-        }
-    }
-    else if(a==2)
-    {
-        cout<<"Enter any 3 numbers ";
-        int a,b,c,max;
-        cin>>a;
-        cin>>b;
-        cin>>c;
-        max = a>b?a>c?a:c:b>c?b:c;
-        cout<<"Maximum of 3 numbers is "<<max<<endl;
-    }
-    else if(a==3)
-    {
-        cout<<"Enter any number ";
-        int a,b=0,temp;
-        cin>>a;
-        temp = a;
-        while(temp!=0)
-        {
-            b *= 10;
-            b += temp%10;
-            temp = temp/10;
-        }
-        if(a==b)
-        {
-            cout<<a<<" is a palindrome"<<endl;
-        }
-    }
-    else if(a==4)
-    {
-        cout<<"Enter any 2 numbers ";
-        int a,b,gcd;
-        cin>>a;
-        cin>>b;
-        gcd = GCD(a,b);
-        cout<<"GCD of "<<a<<" and "<<b<<" is "<<gcd<<endl;
-    }
-    else
-    {
+    int choice;
+    cin>>choice;
+
+    switch choice {
+        case 1 : 
+           cout<<"Enter height for triangle ";
+            int height;
+            cin>>height;
+            cout<<findNumberOfTriangle(height)<<endl
+         break;
+        case 2 : 
+            cout<<"Enter any 3 numbers ";
+            int a,b,c,max;
+            cin>>a;
+            cin>>b;
+            cin>>c;
+            cout<<findMaximumNumber(a,b,c)<<endl;
+        break;
+        case 3 : 
+          cout<<"Enter any number ";
+          int a
+          cin>>a;
+          cout<< isPalindrome(a)<<endl;
+        break;
+        case 4 : 
+            cout<<"Enter any 2 numbers ";
+            int a,b
+            cin>>a;
+            cin>>b;
+            cout<<"GCD of "<<a<<" and "<<b<<" is "<<GCD(a,b)<<endl;
+        break;
+        default:
         cout<<"Please provide valid Input"<<endl;
     }
-    main();
 
+    main();
     return 0;
 }
 
@@ -76,10 +57,37 @@ int GCD(int a, int b)
 {
     if(b!=0)
     {
-        return GCD(b,a%b); //Recursion
+        return GCD(b,a%b);
     }
     else
     {
         return a;
     }
+}
+
+int findNumberOfTriangle(int height) {
+    for(int i=0; i<b; i++)
+        {
+            for(int j=0; j<=i; j++)
+            {
+                cout<<j;
+            }
+            cout<<"\n";
+        }
+}
+
+int findMaximumNumber(int number1,int number2,int number3){
+    return number1>number2?number1>number3?number1:number3:number2>number3?number2:number3
+}
+
+int  isPalindrome(int number) {
+    int sum=0,temp;
+        temp = number;
+        while(temp!=0)
+        {
+            sum *= 10;
+            sum += temp%10;
+            temp = temp/10;
+        }
+    return a==sum? "a is a palindrome" : "a is not a palindrome";
 }
