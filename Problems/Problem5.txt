@@ -2,6 +2,9 @@
 
 using namespace std;
 int GCD(int a, int b);
+void triangles() 
+void findGreatest() 
+void palindrome() 
 
 int main()
 {
@@ -13,63 +16,71 @@ int main()
     cout<<"Please provide input to see illustration\n";
     int a;
     cin>>a;
-    if(a==1)
-    {
-        cout<<"Enter height for triangle ";
-        int b;
-        cin>>b;
-        for(int i=0; i<b; i++)
-        {
-            for(int j=0; j<=i; j++)
-            {
-                cout<<j;
-            }
-            cout<<"\n";
-        }
-    }
-    else if(a==2)
-    {
-        cout<<"Enter any 3 numbers ";
-        int a,b,c,max;
-        cin>>a;
-        cin>>b;
-        cin>>c;
-        max = a>b?a>c?a:c:b>c?b:c;
-        cout<<"Maximum of 3 numbers is "<<max<<endl;
-    }
-    else if(a==3)
-    {
-        cout<<"Enter any number ";
-        int a,b=0,temp;
-        cin>>a;
-        temp = a;
-        while(temp!=0)
-        {
-            b *= 10;
-            b += temp%10;
-            temp = temp/10;
-        }
-        if(a==b)
-        {
-            cout<<a<<" is a palindrome"<<endl;
-        }
-    }
-    else if(a==4)
-    {
-        cout<<"Enter any 2 numbers ";
-        int a,b,gcd;
-        cin>>a;
-        cin>>b;
-        gcd = GCD(a,b);
-        cout<<"GCD of "<<a<<" and "<<b<<" is "<<gcd<<endl;
-    }
-    else
-    {
-        cout<<"Please provide valid Input"<<endl;
+    switch (a) {
+        case 1: triangles();
+                break;
+        case 2: findGreatest();
+                break;
+        case 3: palindrome();
+                break;
+        case 4: cout<<"Enter any 2 numbers ";
+                int a,b,gcd;
+                cin>>a;
+                cin>>b;
+                gcd = GCD(a,b);
+                cout<<"GCD of "<<a<<" and "<<b<<" is "<<gcd<<endl;
+                break;
+        default:
+                cout<<"Please provide valid Input"<<endl;
+                break;
     }
     main();
 
     return 0;
+}
+
+void triangles() 
+{
+    cout<<"Enter height for triangle ";
+    int b;
+    cin>>b;
+    for(int i=0; i<b; i++)
+    {
+        for(int j=0; j<=i; j++)
+        {
+            cout<<j;
+        }
+        cout<<"\n";
+    }
+}
+
+void findGreatest() 
+{
+    cout<<"Enter any 3 numbers ";
+    int a,b,c,max;
+    cin>>a;
+    cin>>b;
+    cin>>c;
+    max = a>b?a>c?a:c:b>c?b:c;
+    cout<<"Maximum of 3 numbers is "<<max<<endl;
+}
+
+void palindrome() 
+{
+    cout<<"Enter any number ";
+    int a,b=0,temp;
+    cin>>a;
+    temp = a;
+    while(temp!=0)
+    {
+        b *= 10;
+        b += temp%10;
+        temp = temp/10;
+    }
+    if(a==b)
+    {
+        cout<<a<<" is a palindrome"<<endl;
+    }
 }
 
 int GCD(int a, int b)

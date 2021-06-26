@@ -21,14 +21,13 @@ console.log(absolute(10));
  */
 
 function calculateTotal(items, options) {
-  let t = 0;
+  let total = 0;
   items.forEach((i) => {
-    t += i.price * i.quan;
+    total += i.price * i.quan;
   });
-  t = t - t * (options.dis || 0);
-  t = t * 1.1;
-  t = t + (options.ship || 5);
-  return t;
+  total = total - total * (options.dis || 0);
+  total = total * 1.1 + (options.ship || 5);
+  return total;
 }
 
 const testItems = [
