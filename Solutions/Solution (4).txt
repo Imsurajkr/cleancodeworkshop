@@ -1,0 +1,33 @@
+function auth( username, password)
+{
+ if(username == "" || password == ""){
+ return "Please enter valid credentials"
+ }
+ 
+ var isAccountValid = validateAccount(username, password)
+ if(isAccountValid) {
+ return true;
+ }
+ else
+ return false;
+}
+ 
+function validateAccount( username, password)
+{
+ var userAccount = getUserByUserName(username);
+ if (!userAccount)
+     return false;
+ return (userAccount.password == password);
+}
+ 
+function getUserByUserName(username)
+{
+    try
+    {
+        return database.ExecuteQuery("Select * from users where username='{username}'");
+    }
+    catch(error)
+    {
+        throw error;
+    }
+}
