@@ -14,13 +14,9 @@ namespace CleanCodeExample
             People.Add(new Person { FirstName = "Aman", LastName = "Verma" });
             People.Add(new Person { FirstName = "Aman", LastName = "Singh" });
 
-            for (int i = People.Count - 1; i >= 0; i--)
-            {
-                Console.WriteLine("Hello" + " " + People[i].FirstName + " " + People[i].LastName);
-            }
-
             foreach (var person in People)
             {
+                Console.WriteLine("Hello" + " " + People[i].FirstName + " " + People[i].LastName);
                 if (person.FirstName == "Aman")
                     Console.WriteLine($"Hello Mr. {person.LastName}");
             }
