@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+
+namespace CleanCodeExample
+{
+    class ToBeCleanedCode
+    {
+        static void Main(string[] args)
+        {
+            List<Person> People = getPersonData;
+	    sendGreetings(People)
+	}
+	
+	public List getPersonData(){	
+	boolean moredata = True;	
+	while(moreData){
+		get data from console
+		Console.ReadLine();		
+	}
+	return personData;					
+	}
+	
+	public sendGreetings(People){
+
+	foreach (var person in People)
+            {
+                if (person.FirstName == "Aman")
+                    Console.WriteLine($"Hello Mr. {person.LastName}");
+		else
+		    Console.WriteLine($"Hello Mr. {person.FirstName}" + "{person.LastName}" );
+            }
+	
+	}
+		
+    }
+}
