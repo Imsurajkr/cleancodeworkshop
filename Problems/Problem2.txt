@@ -5,27 +5,46 @@ namespace CleanCodeExample
 {
     class ToBeCleanedCode
     {
-        static void Main(string[] args)
+        List<Person> People = new List<Person>();
+	
+	static void Main(string[] args)
         {
-            List<Person> People = new List<Person>();
-
-            People.Add(new Person { FirstName = "Aman", LastName = "Gupta" });
-            People.Add(new Person { FirstName = "Aman", LastName = "Agarwal" });
-            People.Add(new Person { FirstName = "Aman", LastName = "Verma" });
-            People.Add(new Person { FirstName = "Aman", LastName = "Singh" });
-
-            for (int i = People.Count - 1; i >= 0; i--)
-            {
-                Console.WriteLine("Hello" + " " + People[i].FirstName + " " + People[i].LastName);
-            }
-
-            foreach (var person in People)
-            {
-                if (person.FirstName == "Aman")
-                    Console.WriteLine($"Hello Mr. {person.LastName}");
-            }
+            
+		AddPerson("Aman","Gupta");
+		AddPerson("Aman","Agarwal");
+		AddPerson("Aman","Verma");
+		AddPerson("Aman","Singh");
+	
+		GreetPeople();
+		GreetPerson("Aman");
+            
 
             Console.ReadLine();
         }
+	
+	private void AddPerson(FirstName, LastName)
+	{	
+		
+	    People.Add(new Person { FirstName = FirstName, LastName = LastName });        
+	}
+	
+	private void GreetPeople()
+	{
+	for (int i = People.Count - 1; i >= 0; i--)
+            {
+                Console.WriteLine($"Hello {People[i].FirstName}  {People[i].LastName});
+            }
+	}
+
+	private void GreetPerson(FirstName)
+	{
+		foreach (var person in People)
+            {
+                if (person.FirstName == FirstName)
+                    Console.WriteLine($"Hello Mr. {person.LastName}");
+            }
+	}
+
+	
     }
 }
